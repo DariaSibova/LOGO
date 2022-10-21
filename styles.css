@@ -63,6 +63,27 @@ body,html{
         border-radius:50%;
         background:#AF774F}
     
+        .circle .one{
+            position:absolute;
+            bottom:6.66%;
+            left:50%;
+            width:66.66%;
+            height:33.33%;
+            -webkit-transform:translate(-50%,-50%) rotate(30deg);transform:translate(-50%,-50%) rotate(30deg);-webkit-transition:transform .2s ease-in-out;transition:transform .2s ease-in-out
+          }
+      
+          .circle .one span{
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:100%;
+            height:100%;
+            border-radius:0 0 50% 50%/ 0 0 100% 100%;
+            background:#FFFFFF;
+            -webkit-transform:translateX(-50%);
+            transform:translateX(-50%)}
+      
+      
   
   
   @-webkit-keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
