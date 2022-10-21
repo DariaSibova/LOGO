@@ -32,6 +32,29 @@ body,html{
     font-weight:bold;
     letter-spacing:2px;
     z-index:99}
+
+    a{
+        color: #AF774F;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      a:hover{
+        text-decoration: underline;
+    
+      }
+    
+      .logo{
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        left: 5 0%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        -webkit-transition: width .2s ease-in-out;
+        transition: width .2s ease-in-out;
+      }
+    
   
   
   @-webkit-keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
