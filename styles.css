@@ -1,0 +1,13 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body{
+    font: normal normal 14px/19px Arial,sans-serif;
+    background: #FFFFFF;
+  }
+  
