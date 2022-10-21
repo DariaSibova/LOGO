@@ -54,6 +54,14 @@ body,html{
         -webkit-transition: width .2s ease-in-out;
         transition: width .2s ease-in-out;
       }
+      @media (max-width:550px){.logo{width:200px}}
+      @media (max-width:440px){.logo{width:100px}}
+      .circle{
+        position:relative;
+        width:100%;
+        padding-top:100%;
+        border-radius:50%;
+        background:#AF774F}
     
   
   
