@@ -93,6 +93,21 @@ body,html{
                 -webkit-transform:translateX(-50%);
                 transform:translateX(-50%)}
         
+
+                .circle .three,.circle .four{
+                    position:absolute;
+                    bottom:35%;
+                    width:13.33%;
+                    height:6.66%;
+                    border-radius:50% 50% 0 0/ 100% 100% 0 0;background:#AF774F;
+                    -webkit-transform:translateX(-50%);
+                    transform:translateX(-50%)
+                  }
+          
+                  .circle .three{left:27%}
+                  .circle .four{right:27%}
+          
+          
   
   
   @-webkit-keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
