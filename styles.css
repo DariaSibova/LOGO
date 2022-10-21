@@ -1,116 +1,163 @@
-body,html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  font: normal normal 14px/19px Arial, sans-serif;
+  background: #ffffff;
+}
+::-moz-selection {
+  background: #af774f;
+  color: #ffffff;
+}
+::selection {
+  background: #af774f;
+  color: #ffffff;
+}
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: #363635;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 99;
+}
+a {
+  color: #af774f;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+@media (max-width: 550px) {
+  .logo {
+    width: 200px;
   }
-  
-  body{
-    font: normal normal 14px/19px Arial,sans-serif;
-    background: #FFFFFF;
+}
+@media (max-width: 440px) {
+  .logo {
+    width: 100px;
   }
-  
-  ::-moz-selection{
-    background:#AF774F;
-    color:#FFFFFF
+}
+.circle {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background: #af774f;
+}
+.circle .one {
+  position: absolute;
+  bottom: 6.66%;
+  left: 50%;
+  width: 66.66%;
+  height: 33.33%;
+  -webkit-transform: translate(-50%, -50%) rotate(30deg);
+  transform: translate(-50%, -50%) rotate(30deg);
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.circle .one span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  background: #ffffff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.circle .two {
+  position: absolute;
+  bottom: 13.33%;
+  left: 50%;
+  width: 16.66%;
+  height: 8.33%;
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  background: #af774f;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.circle .three,
+.circle .four {
+  position: absolute;
+  bottom: 35%;
+  width: 13.33%;
+  height: 6.66%;
+  border-radius: 50% 50% 0 0/ 100% 100% 0 0;
+  background: #af774f;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.circle .three {
+  left: 27%;
+}
+.circle .four {
+  right: 27%;
+}
+.circle:hover .one {
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+.circle .three,
+.circle .four {
+  -webkit-animation: animation 10s infinite ease-in-out;
+  animation: animation 10s infinite ease-in-out;
+}
+@-webkit-keyframes animation {
+  0%,
+  3%,
+  6%,
+  48%,
+  51%,
+  53%,
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
   }
-  ::selection{
-    background:#AF774F;
-    color:#FFFFFF
+  5%,
+  50%,
+  52% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
   }
-  
-  .text{
-    position:absolute;
-    bottom:20px;
-    left:25px;
-    color:#363635;
-    font-family:Arial,sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    line-height:28px;
-    font-weight:bold;
-    letter-spacing:2px;
-    z-index:99}
-
-    a{
-        color: #AF774F;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    
-      a:hover{
-        text-decoration: underline;
-    
-      }
-    
-      .logo{
-        position: absolute;
-        width: 300px;
-        top: 50%;
-        left: 5 0%;
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        -webkit-transition: width .2s ease-in-out;
-        transition: width .2s ease-in-out;
-      }
-      @media (max-width:550px){.logo{width:200px}}
-      @media (max-width:440px){.logo{width:100px}}
-      .circle{
-        position:relative;
-        width:100%;
-        padding-top:100%;
-        border-radius:50%;
-        background:#AF774F}
-    
-        .circle .one{
-            position:absolute;
-            bottom:6.66%;
-            left:50%;
-            width:66.66%;
-            height:33.33%;
-            -webkit-transform:translate(-50%,-50%) rotate(30deg);transform:translate(-50%,-50%) rotate(30deg);-webkit-transition:transform .2s ease-in-out;transition:transform .2s ease-in-out
-          }
-      
-          .circle .one span{
-            position:absolute;
-            top:50%;
-            left:50%;
-            width:100%;
-            height:100%;
-            border-radius:0 0 50% 50%/ 0 0 100% 100%;
-            background:#FFFFFF;
-            -webkit-transform:translateX(-50%);
-            transform:translateX(-50%)}
-      
-            .circle .two{
-                position:absolute;
-                bottom:13.33%;
-                left:50%;
-                width:16.66%;
-                height:8.33%;
-                border-radius:0 0 50% 50%/ 0 0 100% 100%;background:#AF774F;
-                -webkit-transform:translateX(-50%);
-                transform:translateX(-50%)}
-        
-
-                .circle .three,.circle .four{
-                    position:absolute;
-                    bottom:35%;
-                    width:13.33%;
-                    height:6.66%;
-                    border-radius:50% 50% 0 0/ 100% 100% 0 0;background:#AF774F;
-                    -webkit-transform:translateX(-50%);
-                    transform:translateX(-50%)
-                  }
-          
-                  .circle .three{left:27%}
-                  .circle .four{right:27%}
-          
-          
-  
-  
-  @-webkit-keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
-  
-  @keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
-  
+}
+@keyframes animation {
+  0%,
+  3%,
+  6%,
+  48%,
+  51%,
+  53%,
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  5%,
+  50%,
+  52% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
