@@ -83,7 +83,16 @@ body,html{
             -webkit-transform:translateX(-50%);
             transform:translateX(-50%)}
       
-      
+            .circle .two{
+                position:absolute;
+                bottom:13.33%;
+                left:50%;
+                width:16.66%;
+                height:8.33%;
+                border-radius:0 0 50% 50%/ 0 0 100% 100%;background:#AF774F;
+                -webkit-transform:translateX(-50%);
+                transform:translateX(-50%)}
+        
   
   
   @-webkit-keyframes animation{0%,3%,6%,48%,51%,53%,100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}5%,50%,52%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}}
